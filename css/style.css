@@ -115,13 +115,13 @@ body {
 }
 
 #preview-image-container #sperry { 
-    width: 350px;
-    padding-top: 25%;
+    width: 400px;
+    padding-top: 10%;
     height: 230px;
 }
 
 #preview-image-container #shopMyStyle { 
-    padding: 10%;
+    padding-inline: 7%;
     width: 200px;
     height: 430px;
 }
