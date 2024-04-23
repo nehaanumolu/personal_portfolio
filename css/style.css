@@ -42,8 +42,20 @@ body {
 
 /* About Section Content */
 #about-content {
-    max-width: 50%;
     display: flex;
+    max-width: 100%;
+}
+
+/* ensures text is to the left of the profile image */
+#about-content #text-container {
+    order: 1;
+    padding-top: 10%;
+}
+
+#about-content #profile-container {
+    order: 2;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* About Section Name Header Font Formatting */
@@ -56,13 +68,17 @@ body {
 #about-content p {
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5; /* spacing between lines */
+    line-height: 1.7; /* spacing between lines */
 }
 
 #about-content img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    display: block;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     object-fit: cover;
 }
 
