@@ -95,8 +95,35 @@ body {
 
 #preview-section-container {
     background-color: #fdf2f4;
-    margin: 8%;
-    padding: 5%;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#preview-section-text-container {
+    order: 1;
+    line-height: 1.7;
+    padding-right: 4%;
+}
+
+#preview-image-container {
+    order: 2;
+    display: flex;
+    flex-direction: horizontal;
+}
+
+#preview-image-container #sperry { 
+    width: 350px;
+    padding-top: 25%;
+    height: 230px;
+}
+
+#preview-image-container #shopMyStyle { 
+    padding: 10%;
+    width: 200px;
+    height: 430px;
 }
 
 #preview-section-container h2 {
@@ -111,10 +138,13 @@ body {
 
 #preview-section-container a {
     color: #5d8422;
-    list-style-type: none;
     text-decoration: none;
     font-size: 23px;
     font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border: 2px solid #5d8422;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 #preview-section-container a:hover {
