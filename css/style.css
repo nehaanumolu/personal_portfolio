@@ -35,9 +35,9 @@ body {
 /* About Section Box */
 #about-section {
     background-color: #e8f4d5;
-    padding: 8%;
-    height: 675px;
+    padding: 5%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* About Section Content */
@@ -55,26 +55,26 @@ body {
 
 #profile-container {
     order: 2;
-    padding-inline-start: 10%;
+    padding-inline-start: 5%;
 }
 
 /* About Section Name Header Font Formatting */
 #about-content h1 {
-    font-size: 80px;
+    font-size: 88px;
     font-family: 'Sarabun', sans-serif;
 }
 
 /* About Section Text Content Font Formatting */
 #about-content p {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.7; /* spacing between lines */
 }
 
 /* Formatting to create desired image shape */
 #about-content img {
-    width: 550px;
-    height: 700px;
+    width: 600px;
+    height: 750px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 50%;
