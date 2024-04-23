@@ -93,8 +93,6 @@ body {
 
 /* ----------------------  Homepage Preview Section Formatting ---------------------- */
 
-/* ----------------------  Footer Formatting ---------------------- */
-
 #preview-section-container {
     background-color: #fdf2f4;
     margin: 8%;
@@ -111,9 +109,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+#preview-section-container a {
+    color: #5d8422;
+}
+
 #skills-preview-section {
     background-color: white;
 }
+
+/* ----------------------  Footer Formatting ---------------------- */
+
 
 #footer {
     background-color: #1d2127;
