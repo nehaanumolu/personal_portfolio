@@ -13,14 +13,13 @@ body {
     display: flex; 
     justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
 }
 
 /* adds padding between menu item words */
 #menu-item {
     margin-right: 40px;
-    font-size: 30px;
 }
-
 /* removes blue underline from menu item words */
 #menu-item a {
     text-decoration: none;
@@ -37,7 +36,7 @@ body {
 #about-section {
     background-color: #e8f4d5;
     padding: 100px;
-    height: 650px;
+    height: 675px;
 }
 
 /* About Section Content */
@@ -71,10 +70,10 @@ body {
     line-height: 1.7; /* spacing between lines */
 }
 
+/* Formatting to create desired image shape */
 #about-content img {
-    width: 600px;
-    height: 600px;
-    display: block;
+    width: 550px;
+    height: 700px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 50%;
