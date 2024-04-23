@@ -20,9 +20,13 @@
     font-weight: bold;
 }
 
-#about {
+#about-section {
     background-color: #e8f4d5;
     padding: 60px;
+}
+
+#about-content {
+    max-width: 600px;
 }
 
 #footer {
@@ -40,4 +44,11 @@
 #footer #right-side {
     padding-left: 50%;
     font-size: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
