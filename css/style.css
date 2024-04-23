@@ -121,6 +121,10 @@ body {
     font-weight: bold;
 }
 
+#preview-section-container li {
+    list-style-type: none;
+}
+
 #skills-preview-section {
     background-color: white;
 }
