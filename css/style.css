@@ -111,6 +111,14 @@ body {
 
 #preview-section-container a {
     color: #5d8422;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#preview-section-container a:hover {
+    font-weight: bold;
 }
 
 #skills-preview-section {
