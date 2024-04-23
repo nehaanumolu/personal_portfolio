@@ -145,6 +145,7 @@ body {
     border: 2px solid #5d8422;
     display: inline-block;
     border-radius: 10px;
+    padding-inline: 50px;
 }
 
 #preview-section-container a:hover {
@@ -155,8 +156,16 @@ body {
     list-style-type: none;
 }
 
+/* ----------------------  Homepage Skills Preview Section ---------------------- */
+
 #skills-preview-section {
     background-color: white;
+    margin: 5%;
+}
+
+#skills-preview-section h2 {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 50px;
 }
 
 /* ----------------------  Footer Formatting ---------------------- */
