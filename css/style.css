@@ -35,8 +35,9 @@ body {
 /* About Section Box */
 #about-section {
     background-color: #e8f4d5;
-    padding: 100px;
+    padding: 8%;
     height: 675px;
+    display: flex;
 }
 
 /* About Section Content */
@@ -46,15 +47,15 @@ body {
 }
 
 /* ensures text is to the left of the profile image */
-#about-content #text-container {
+#text-container {
     order: 1;
     padding-top: 10%;
+    flex: 60%;
 }
 
-#about-content #profile-container {
+#profile-container {
     order: 2;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-inline-start: 10%;
 }
 
 /* About Section Name Header Font Formatting */
@@ -81,6 +82,15 @@ body {
     object-fit: cover;
 }
 
+#about-content #contact-info a { 
+    color: #e35276;
+    text-decoration: none;
+}
+
+#about-content #contact-info a:hover{
+    font-weight: bold;
+}
+
 
 /* Footer */
 
@@ -99,10 +109,4 @@ body {
 #footer #right-side {
     padding-left: 50%;
     font-size: 30px;
-}
-
-
-#contact-info a { 
-    color: #e35276;
-    text-decoration: none;
 }
