@@ -152,10 +152,6 @@ body {
     font-weight: bold;
 }
 
-#preview-section-body a {
-    list-style-type: none;
-}
-
 /* ----------------------  Homepage Skills Preview Section ---------------------- */
 
 #skills-preview-section {
@@ -164,7 +160,6 @@ body {
 }
 
 #skills-section-body {
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
@@ -173,15 +168,9 @@ body {
 #skills-section-body #row-2 {
     display: flex;
     justify-content: space-between;
-    flex-direction: horizontal;
-    text-align: center;
+    align-items: center;
+    text-align: left;
     gap: 10%;
-
-}
-
-#skills-section-body li {
-    text-decoration: none;
-    list-style-type: none;
 }
 
 #skills-preview-section h2 {
@@ -190,13 +179,17 @@ body {
 }
 
 #skills-section-body p {
-    border-bottom: 2px solid lightgray;
-    flex-grow: 1;
     padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+    box-sizing: border-box;
+}
+
+#skills-section-body li {
+    list-style-type: none;
+    text-align: center;
 }
 
 #skills-section-body li a {
-    list-style-type: none;
     text-decoration: none;
     color: #e35276;
     padding: 15px;
