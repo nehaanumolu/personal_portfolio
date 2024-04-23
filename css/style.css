@@ -1,0 +1,43 @@
+#menu-items {
+    list-style-type: none; /* removes bullet points from menu */
+    display: flex; 
+    justify-content: flex-end;
+}
+
+/* adds padding between menu item words */
+#menu-item {
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+/* removes blue underline from menu item words */
+#menu-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+#menu-item a:hover {
+    font-weight: bold;
+}
+
+#about {
+    background-color: #e8f4d5;
+    padding: 60px;
+}
+
+#footer {
+    background-color: #1d2127;
+    color: white;
+    display: flex;
+}
+
+#footer #left-side {
+    display: flex;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+#footer #right-side {
+    padding-left: 50%;
+    font-size: 30px;
+}
