@@ -1,7 +1,18 @@
+/* ----------------------  General Formatting ---------------------- */
+
+/* Entire page has 3% margin on both sides */
+
+body {
+    margin: 3%;
+}
+
+/* ----------------------  Menu Formatting ---------------------- */
+
 #menu-items {
     list-style-type: none; /* removes bullet points from menu */
     display: flex; 
     justify-content: flex-end;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* adds padding between menu item words */
@@ -20,14 +31,43 @@
     font-weight: bold;
 }
 
+/* ----------------------  About Section Formatting ---------------------- */
+
+/* About Section Box */
 #about-section {
     background-color: #e8f4d5;
-    padding: 60px;
+    padding: 100px;
+    height: 650px;
 }
 
+/* About Section Content */
 #about-content {
-    max-width: 600px;
+    max-width: 50%;
+    display: flex;
 }
+
+/* About Section Name Header Font Formatting */
+#about-content h1 {
+    font-size: 80px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* About Section Text Content Font Formatting */
+#about-content p {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5; /* spacing between lines */
+}
+
+#about-content img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* Footer */
 
 #footer {
     background-color: #1d2127;
@@ -46,9 +86,8 @@
     font-size: 30px;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+
+#contact-info a { 
+    color: #e35276;
+    text-decoration: none;
 }
