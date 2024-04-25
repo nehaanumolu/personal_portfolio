@@ -155,22 +155,7 @@ body {
 /* ----------------------  Homepage Skills Preview Section ---------------------- */
 
 #skills-preview-section {
-    background-color: white;
     margin: 5%;
-}
-
-#skills-section-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-}
-
-#skills-section-body #row-1, 
-#skills-section-body #row-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    gap: 10%;
 }
 
 #skills-preview-section h2 {
@@ -178,10 +163,29 @@ body {
     font-size: 50px;
 }
 
+#skills-section-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+#skills-section-body #row-1, 
+#skills-section-body #row-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+#skills-section-body #col-1, 
+#skills-section-body #col-2,
+#skills-section-body #col-3 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
 #skills-section-body p {
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
-    box-sizing: border-box;
 }
 
 #skills-section-body li {
@@ -192,6 +196,7 @@ body {
 #skills-section-body li a {
     text-decoration: none;
     color: #e35276;
+    margin-top: 2%;
     padding: 15px;
     border: 2px solid #e35276;
     display: inline-block;
@@ -209,17 +214,22 @@ body {
     background-color: #1d2127;
     color: white;
     display: flex;
+    font-family: 'Sarabun', sans-serif;
+    padding-bottom: 10%;
+    line-height: 1.7;
+    text-decoration: none;
 }
 
 #footer #left-side {
     display: flex;
+    font-size: 60px;
     padding-left: 100px;
     padding-top: 20px;
 }
 
 #footer #right-side {
     padding-left: 50%;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* ----------------------  Work Experience Page Formatting ---------------------- */
