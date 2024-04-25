@@ -223,3 +223,11 @@ body {
 }
 
 /* ----------------------  Work Experience Page Formatting ---------------------- */
+
+#work-experience-header {
+    background-color:  #e8f4d5;
+    font-size: 30px;
+    padding-inline: 10%;
+    padding: 2%;
+    font-family: 'Sarabun', sans-serif;
+}
