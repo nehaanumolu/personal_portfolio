@@ -166,21 +166,8 @@ body {
 #skills-section-body {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
-}
-
-#skills-section-body #row-1, 
-#skills-section-body #row-2 {
     display: flex;
-    justify-content: space-between;
-    gap: 10%;
-}
-
-#skills-section-body #col-1, 
-#skills-section-body #col-2,
-#skills-section-body #col-3 {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10%;
+    flex-direction: column;
 }
 
 #skills-section-body p {
@@ -188,13 +175,10 @@ body {
     border-bottom: 2px solid lightgray;
 }
 
-#skills-section-body li {
-    list-style-type: none;
-    text-align: center;
-}
-
-#skills-section-body li a {
+#skills-section-body a {
     text-decoration: none;
+    align-items: center;
+    text-align: center;
     color: #e35276;
     margin-top: 2%;
     padding: 15px;
@@ -203,7 +187,7 @@ body {
     border-radius: 10px;
 }
 
-#skills-section-body li a:hover {
+#skills-section-body a:hover {
     font-weight: bold;
 }
 
@@ -215,7 +199,7 @@ body {
     color: white;
     display: flex;
     font-family: 'Sarabun', sans-serif;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     line-height: 1.7;
     text-decoration: none;
 }
@@ -230,6 +214,8 @@ body {
 #footer #right-side {
     padding-left: 50%;
     font-size: 40px;
+    padding-top: 2%;
+    font-weight: 700;
 }
 
 /* ----------------------  Work Experience Page Formatting ---------------------- */
