@@ -13,7 +13,7 @@ body {
     display: flex; 
     justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /* adds padding between menu item words */
@@ -92,8 +92,10 @@ body {
 }
 
 /* ----------------------  Homepage Preview Section Formatting ---------------------- */
+/* ----------------------  Work Experience Section Formatting ---------------------- */
 
-#preview-section-container {
+#preview-section-container,
+#work-experience-container {
     background-color: #fdf2f4;
     margin: 5%;
     padding: 3%;
@@ -102,13 +104,15 @@ body {
     width: auto;
 }
 
-#preview-section-text-container {
+#preview-section-text-container,
+#work-experience-text-container {
     order: 1;
     line-height: 1.7;
     padding-right: 4%;
 }
 
-#preview-image-container {
+#preview-image-container,
+#work-experience-image-container {
     order: 2;
     display: flex;
     flex-direction: horizontal;
@@ -120,18 +124,56 @@ body {
     height: 230px;
 }
 
+#work-experience-image-container #sperry
+{
+    width: 400px;
+    align-items: center;
+    padding-top: 50%;
+    height: 230px;
+}
+
+#work-experience-image-container #sperry:hover
+{
+    transform: scale(1.1);
+}
+
+#work-experience-image-container #cmu
+{
+    width: 350px;
+    align-items: center;
+    height: 350px;
+}
+
+#work-experience-image-container #cmu:hover
+{
+    transform: scale(1.1);
+}
+
+#work-experience-image-container #enphase { 
+    width: 300px;
+    align-items: center;
+    height: 300px;
+}
+
+#work-experience-image-container #enphase:hover { 
+    transform: scale(1.1);
+}
+
 #preview-image-container #shopMyStyle { 
     padding-inline: 7%;
+    align-items: center;
     width: 200px;
     height: 430px;
 }
 
-#preview-section-container h2 {
+#preview-section-container h2, 
+#work-experience-container h2 {
     font-size: 40px;
     font-family: 'Sarabun', sans-serif;
 }
 
-#preview-section-container p {
+#preview-section-container p ,
+#work-experience-container p {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -150,6 +192,11 @@ body {
 
 #preview-section-container a:hover {
     font-weight: bold;
+}
+
+#work-experience-text-container li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
 }
 
 /* ----------------------  Homepage Skills Preview Section ---------------------- */
@@ -202,22 +249,70 @@ body {
     padding-bottom: 5%;
     line-height: 1.7;
     text-decoration: none;
+    align-items: flex-start;
 }
 
 #footer #left-side {
     display: flex;
-    font-size: 60px;
-    padding-left: 100px;
-    padding-top: 20px;
+    font-size: 50px;
+    flex-direction: column;
+    padding-left: 7%;
 }
 
 #footer #right-side {
-    padding-left: 50%;
-    font-size: 40px;
-    padding-top: 2%;
+    margin-left: auto;
+    padding-right: 8%;
+    font-size: 35px;
+    padding-top: 4%;
     font-weight: 700;
 }
 
+#footer-logos {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+#footer #linkedin-logo {
+    height: 80px;
+    width: 80px;
+}
+
+#footer #email-logo {
+    height: 80px;
+    width: 90px;
+}
+
+#footer-logos a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#footer-logos a:hover {
+    transform: scale(1.3);
+}
+
+#footer img {
+    display: block;
+    width: auto;
+    height: 60px;
+}
+
+
+@media (max-width: 1500px) {
+    #footer {
+        padding: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #footer #right-side {
+        order: 2;
+        width: 100%;
+        text-align: left;
+        padding-left: 7%;
+    }
+}
 /* ----------------------  Work Experience Page Formatting ---------------------- */
 
 #work-experience-header {
