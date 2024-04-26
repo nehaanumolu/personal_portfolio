@@ -114,54 +114,48 @@ body {
 }
 
 #preview-image-container,
-#work-experience-image-container{
+#work-experience-image-container,
+#projects-image-container {
     order: 2;
     display: flex;
     flex-direction: horizontal;
 }
 
-#preview-image-container #sperry { 
-    width: 400px;
-    padding-top: 10%;
-    height: 230px;
-}
-
-#work-experience-image-container #sperry
+#sperry
 {
     width: 400px;
     align-items: center;
-    padding-top: 50%;
     height: 230px;
 }
 
-#work-experience-image-container #sperry:hover
+#sperry:hover
 {
     transform: scale(1.1);
 }
 
-#work-experience-image-container #cmu
+#cmu
 {
     width: 350px;
     align-items: center;
     height: 350px;
 }
 
-#work-experience-image-container #cmu:hover
+#cmu:hover
 {
     transform: scale(1.1);
 }
 
-#work-experience-image-container #enphase { 
+#enphase { 
     width: 300px;
     align-items: center;
     height: 300px;
 }
 
-#work-experience-image-container #enphase:hover { 
+#enphase:hover { 
     transform: scale(1.1);
 }
 
-#preview-image-container #shopMyStyle { 
+#shopMyStyle { 
     padding-inline: 7%;
     align-items: center;
     width: 200px;
@@ -176,8 +170,8 @@ body {
 }
 
 #preview-section-container p ,
-#work-experience-container p,
-#projects-container h2 {
+#work-experience-container p ,
+#projects-container p {
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -198,9 +192,16 @@ body {
     font-weight: bold;
 }
 
-#work-experience-text-container li {
+#work-experience-text-container li,
+#projects-text-container li {
     font-family: 'Open Sans', sans-serif;
     font-size: 27px;
+}
+
+#cmu_is {
+    width: 400px;
+    height: 200px;
+    align-items: center;
 }
 
 /* ----------------------  Homepage Skills Preview Section ---------------------- */
@@ -258,7 +259,7 @@ body {
 
 #footer #left-side {
     display: flex;
-    font-size: 50px;
+    font-size: 30px;
     flex-direction: column;
     padding-left: 7%;
 }
@@ -266,8 +267,8 @@ body {
 #footer #right-side {
     margin-left: auto;
     padding-right: 8%;
-    font-size: 35px;
-    padding-top: 4%;
+    font-size: 30px;
+    padding-top: 1%;
     font-weight: 700;
 }
 
@@ -319,10 +320,61 @@ body {
 }
 /* ----------------------  Work Experience Page Formatting ---------------------- */
 
-#work-experience-header, #projects-header {
+#work-experience-header, 
+#projects-header {
     background-color:  #e8f4d5;
     font-size: 30px;
     padding-inline: 10%;
     padding: 2%;
     font-family: 'Sarabun', sans-serif;
+}
+
+
+/* ----------------------  Skills Page Formatting ---------------------- */
+
+#skills-header {
+    font-size: 30px;
+    padding-inline: 10%;
+    padding: 2%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+#skills-subheader h2 {
+    font-size: 40px;
+    padding: 2%;
+    font-family: 'Sarabun', sans-serif;
+}
+
+#skills-key {
+    display: flex;
+    flex: column;
+    gap: 3%;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#technical-skill p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    padding-inline: 5%;
+    font-weight: semi-bold;
+    background-color: #f6fbf0;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+#soft-skill p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    padding-inline: 5%;
+    font-weight: semi-bold;
+    background-color: #fdf2f4;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    height: auto;
+    width: auto;
 }
