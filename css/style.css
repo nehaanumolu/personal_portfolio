@@ -348,23 +348,60 @@ body {
 #skills-key {
     display: flex;
     flex: column;
-    gap: 3%;
+    gap: 10%;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 25%;
+    padding-bottom: 1%;
 }
 
-#technical-skill p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 35px;
-    padding-inline: 5%;
-    font-weight: semi-bold;
+#technical-skill {
+    overflow-y: auto;
+    height: 450px;
+    flex-direction: column;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
     background-color: #f6fbf0;
     margin: 5%;
-    padding: 3%;
-    display: flex;
-    height: auto;
-    width: auto;
+    padding: 3%
 }
+
+.skill-name { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: semi-bold;
+}
+
+.skill-level { 
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#soft-skill {
+    overflow-y: auto;
+    width: auto;
+    height: 450px;
+}
+
+#technical-skill .circle {
+    display: inline-block;
+    margin-left: 10px;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-left: 210px;
+    translate: 40px;
+}
+
+#technical-skill .filled {
+    background-color: #a0d356;
+}
+
 
 #soft-skill p {
     font-family: 'Open Sans', sans-serif;
@@ -377,4 +414,26 @@ body {
     display: flex;
     height: auto;
     width: auto;
+}
+
+#soft-skill .circle {
+    display: inline-block;
+    margin-left: 10px;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin-left: 210px;
+    translate: 40px;
+}
+
+#soft-skill .filled {
+    background-color: #ff8295;
+}
+
+#skills-section-1 {
+    padding-bottom: 3%;
+}
+#skills-section-2 {
+    padding-bottom: 6%;
 }
