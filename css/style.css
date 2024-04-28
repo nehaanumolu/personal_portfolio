@@ -22,6 +22,7 @@ html {
     justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
     font-size: 35px;
+    padding-bottom: 0.5%;
 }
 
 /* adds padding between menu item words */
@@ -210,6 +211,7 @@ html {
     display: inline-block;
     border-radius: 10px;
     padding-inline: 50px;
+    margin-top: 5%;
 }
 
 #preview-section-container a:hover {
