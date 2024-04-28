@@ -1,15 +1,5 @@
 /* ----------------------  General Formatting ---------------------- */
 
-.scale-container {
-    position: relative;
-    transform-origin: top left;
-    transform: scale(0.5);
-    overflow: hidden;
-    height: auto;  
-    min-height: 100vh; 
-    overflow-y: auto;
-}
-
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -288,7 +278,6 @@
     line-height: 1.7;
     text-decoration: none;
     align-items: flex-start;
-    clear: both;
 }
 
 #footer #left-side {
