@@ -95,7 +95,13 @@ html {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
+#about-content img:hover {
+    transform: rotate(360deg);
+}
+
 
 #about-content #contact-info a { 
     color: #e35276;
