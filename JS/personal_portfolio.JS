@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const technicalSkills = document.getElementById('technical-skill');
     const softSkills = document.getElementById('soft-skill');
 
-    let scrollAmount = 10; // rate of scrolling
+    let scrollAmount = 8; // rate of scrolling
 
     // technical skills scroll interval
     let techScrollInterval = setInterval(function() {
