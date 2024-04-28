@@ -32,13 +32,3 @@ document.addEventListener("DOMContentLoaded", function() {
     softSkills.addEventListener('mouseover', stopSoftScrolling);
     softSkills.addEventListener('touchstart', stopSoftScrolling);
 });
-
-window.addEventListener('resize', adjustHeight);
-
-function adjustHeight() {
-    const scaleContainer = document.querySelector('.scale-container');
-    if (scaleContainer) {
-        const scaledHeight = window.innerHeight / 0.5; // Assuming the scale is 0.5
-        scaleContainer.style.height = scaledHeight + 'px';
-    }
-}
