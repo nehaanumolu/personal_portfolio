@@ -1,4 +1,12 @@
 /* ----------------------  General Formatting ---------------------- */
+body {
+    transform-origin: top left; /* Ensures the scaling starts from the top left corner */
+    transform: scale(0.5); /* Scales down the whole body to 50% */
+    width: 200%; /* Since the body is now half the width, increase it to fit the original size */
+    height: 200%; /* Similarly, adjust the height to fit the original content size */
+    transform-origin: top left;
+}
+
 html {
     scroll-behavior: smooth;
 }
