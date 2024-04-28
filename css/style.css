@@ -2,7 +2,6 @@
 .scale-container {
     transform-origin: top left;
     transform: scale(0.5);
-    overflow: hidden;   
     width: 200%;
     height: 200%;
 }
