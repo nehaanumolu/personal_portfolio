@@ -59,6 +59,7 @@ html {
 #about-content {
     display: flex;
     max-width: 100%;
+    perspective: 1000px;
 }
 
 /* ensures text is to the left of the profile image */
@@ -95,11 +96,20 @@ html {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 2s ease;
+}
+
+@keyframes rotateOnce {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 #about-content img:hover {
-    transform: rotate(360deg);
+    animation: rotateOnce 2s forwards;
 }
 
 
