@@ -1,11 +1,12 @@
 /* ----------------------  General Formatting ---------------------- */
-.scale-container {
+
+/* .scale-container {
     transform-origin: top left;
     transform: scale(0.5);
     width: 200%;
     height: 200%;
 }
-
+*/
 @keyframes fadeIn {
     from {
       opacity: 0;
