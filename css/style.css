@@ -2,19 +2,13 @@
 
 /* Entire page has 3% margin on both sides */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html, body {
-    height: 100%;
-  }
-  
 body {
-    margin: 3%;
+    transform-origin: top left;
+    transform: scale(0.5);
+    width: 200%;
+    height: 200%;
+    transform-origin: top left;
 }
-
 html {
     scroll-behavior: smooth;
 }
