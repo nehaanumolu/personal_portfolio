@@ -2,18 +2,33 @@ document.addEventListener("DOMContentLoaded", function() {
     const technicalSkills = document.getElementById('technical-skill');
     const softSkills = document.getElementById('soft-skill');
 
-    let scrollAmount = 10;
-    let scrollInterval = setInterval(function() {
+    let scrollAmount = 10; // rate of scrolling
+
+    // technical skills scroll interval
+    let techScrollInterval = setInterval(function() {
         technicalSkills.scrollTop += scrollAmount;
+    }, 50);
+
+    // soft skills scroll interval
+    let softScrollInterval = setInterval(function() {
         softSkills.scrollTop += scrollAmount;
     }, 50);
 
-    function stopScrolling() {
-        clearInterval(scrollInterval);
+    // stop technical skills scrolling
+    function stopTechScrolling() {
+        clearInterval(techScrollInterval);
     }
 
-    technicalSkills.addEventListener('mouseover', stopScrolling);
-    technicalSkills.addEventListener('touchstart', stopScrolling);
-    softSkills.addEventListener('mouseover', stopScrolling);
-    softSkills.addEventListener('touchstart', stopScrolling);
+    // stop soft skills scrolling
+    function stopSoftScrolling() {
+        clearInterval(softScrollInterval);
+    }
+
+    // event listeners for technical skills
+    technicalSkills.addEventListener('mouseover', stopTechScrolling);
+    technicalSkills.addEventListener('touchstart', stopTechScrolling);
+
+    // event listeners for soft skills
+    softSkills.addEventListener('mouseover', stopSoftScrolling);
+    softSkills.addEventListener('touchstart', stopSoftScrolling);
 });
