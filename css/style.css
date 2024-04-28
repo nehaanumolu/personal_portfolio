@@ -1,14 +1,4 @@
 /* ----------------------  General Formatting ---------------------- */
-
-/* Entire page has 3% margin on both sides */
-
-body {
-    transform-origin: top left;
-    transform: scale(0.5);
-    width: 200%;
-    height: 200%;
-    transform-origin: top left;
-}
 html {
     scroll-behavior: smooth;
 }
