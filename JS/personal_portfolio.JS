@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const technicalSkills = document.getElementById('technical-skill');
     const softSkills = document.getElementById('soft-skill');
 
+    let scrollAmount = 10;
     let scrollInterval = setInterval(function() {
-        technicalSkills.scrollBy(0, 1);
-        softSkills.scrollBy(0, 1);
+        technicalSkills.scrollTop += scrollAmount;
+        softSkills.scrollTop += scrollAmount;
     }, 50);
 
     function stopScrolling() {
@@ -12,5 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     technicalSkills.addEventListener('mouseover', stopScrolling);
+    technicalSkills.addEventListener('touchstart', stopScrolling);
     softSkills.addEventListener('mouseover', stopScrolling);
+    softSkills.addEventListener('touchstart', stopScrolling);
 });
